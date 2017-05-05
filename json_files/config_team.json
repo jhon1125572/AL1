@@ -1,0 +1,13 @@
+{
+    "folder":   "json_files",
+    "type":     "json",
+    "format":   {
+                    "team": "",
+                    "name": "",
+                    "users": {
+                                ""
+                            }
+                },
+    "version":  "1.0.0",
+    "tag":      "dev-1.0.0"
+}
