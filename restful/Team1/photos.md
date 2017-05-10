@@ -56,7 +56,8 @@
           "title": "officia porro iure quia iusto qui ipsa ut modi",
           "url": "http://placehold.it/600/24f355",
           "thumbnailUrl": "http://placehold.it/150/24f355"
-        },]
+        },
+      ]
   ```
  
 * **Error Response:**
@@ -259,7 +260,7 @@
       }
     });
   ```
-  5
+
 **Delete photo**
 ----
   Returns json data about a deleted photo.
