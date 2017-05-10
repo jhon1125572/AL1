@@ -1,6 +1,15 @@
 # API photo's especifications
 
 
+## Data params' description
+
+  | Field name   |      Type      |  Description |
+  |--------------|:--------------:|-------------:|
+  |albumId       |[integer]       |              |
+  |title         |[alphanumeric]  |              |
+  |file          |[file]          |              |
+  
+
 **List Photos**
 ----
   Returns json data about all the photos.
@@ -133,10 +142,9 @@
 
 * **Data Params**
 
-  
-    albumId: [integer],
-    title: [alphanumeric],
-    file: [file]
+    albumId
+    title 
+    file
     
   *Example:*
     
@@ -196,10 +204,9 @@
 
 * **Data Params**
 
-  
-    albumId: [integer],
-    title: [alphanumeric],
-    file: [file]
+    albumId
+    title 
+    file
     
   *Example:*
     
@@ -240,7 +247,7 @@
       }
     });
   ```
-  
+  5
 **Delete photo**
 ----
   Returns json data about a deleted photo.
