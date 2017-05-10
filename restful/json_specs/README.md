@@ -1,6 +1,6 @@
 # Users
 
-Fields:
+- Fields:
 ```
     id: integer
     name: string 255
@@ -21,31 +21,40 @@ Fields:
       catchPhrase: string 255
       bs: string 255
 ```
-Identifier:
-    id (assigned/non editable)
+- Identifier:
 
-Mandatory:
-    name
-    username (unique)
-    email (format validation)
+            id (assigned/non editable)
 
-Lists:
-- Pagination required (default paging 20)
-- Ordering by:
-    id (default) (asc | desc)
-    name (asc | desc)
-- Filtering by:
-    name (equal | like)
-    username (equal | like)
-    email (equal | like)
-    website (equal | like)
-    company.name (equal | like)
-- Total counts
+- Mandatory:
+
+            name
+            username (unique)
+            email (format validation)
+
+- Lists:
+
+    + Pagination required (default paging 20 items)
+    
+    + Ordering by:
+
+            id (default) (asc | desc)  
+            name (asc | desc)  
+
+    + Filtering by:
+
+            name (equal | like)  
+            username (equal | like)  
+            email (equal | like)  
+            website (equal | like)  
+            company.name (equal | like)  
+        
+    + Total counts
+
 
 
 # Posts
 
-Fields:
+- Fields:
 ```
     userId: integer
     id: integer
@@ -53,27 +62,36 @@ Fields:
     body: string 65535
 ```
 
-Identifier:
-    id (assigned/non editable)
+- Identifier:
 
-Mandatory:
-    userId (Related to users.id)
-    title
+            id (assigned/non editable)
 
-Lists:
-- Pagination required (default paging 20)
-- Ordering by:
-    id (default) (asc | desc)
-    title (asc | desc)
-- Filtering by:
-    userId (equal)
-    title (equal | like)
-- Total counts
+- Mandatory:
+
+            userId (Related to users.id)
+            title
+
+- Lists:
+
+    + Pagination required (default paging 20)
+
+    + Ordering by:
+
+            id (default) (asc | desc)
+            title (asc | desc)
+ 
+    + Filtering by:
+    
+            userId (equal)
+            title (equal | like)
+            
+    + Total counts
+
 
 
 # Comments
 
-Fields:
+- Fields:
 ```
     postId: integer
     id: integer
@@ -82,53 +100,71 @@ Fields:
     body: string 65535
 ```
 
-Identifier:
-    id (assigned/non editable)
+- Identifier:
 
-Mandatory:
-    postId (Related to posts.id)
-    name
-    email (format validation)
+            id (assigned/non editable)
 
-Lists:
-- Pagination required (default paging 30)
-- Ordering by:
-    name (asc | desc)
-- Filtering by:
-    postId (equal)
-    name (equal | like)
-- Total counts
+- Mandatory:
+
+            postId (Related to posts.id)
+            name
+            email (format validation)
+
+- Lists:
+
+    + Pagination required (default paging 30)
+
+    + Ordering by:
+
+            name (asc | desc)
+
+    + Filtering by:
+
+            postId (equal)
+            name (equal | like)
+
+    + Total counts
+
 
 
 # Albums
 
-Fields:
+- Fields:
 ```
     userId: integer
     id: integer
     title: string 255
 ```
 
-Identifier:
-    id (assigned/non editable)
+- Identifier:
 
-Mandatory:
-    userId (Related to users.id)
-    title
+            id (assigned/non editable)
 
-Lists:
-- Pagination required (default paging 10)
-- Ordering by:
-    name (asc | desc)
-- Filtering by:
-    userId (equal)
-    title (equal | like)
-- Total counts
+- Mandatory:
+
+            userId (Related to users.id)
+            title
+
+- Lists:
+
+    + Pagination required (default paging 10)
+
+    + Ordering by:
+
+            name (asc | desc)
+
+    + Filtering by:
+
+            userId (equal)
+            title (equal | like)
+
+    + Total counts
+
 
 
 # Photos
 
-Fields:
+- Fields:
 ```
     albumId: integer
     id: integer
@@ -137,29 +173,37 @@ Fields:
     thumbnailUrl: string 255
 ```
 
-Identifier:
-    id (assigned/non editable)
+- Identifier:
 
-Mandatory:
-    albumId (Related to albums.id)
-    title
-    url (format validation)
-    thumbnailUrl (format validation)
+            id (assigned/non editable)
 
-Lists:
-- Pagination required (default paging 25)
-- Ordering by:
-    title (asc | desc)
-- Filtering by:
-    albumId (equal)
-    title (equal | like)
-- Total counts
+- Mandatory:
+
+            albumId (Related to albums.id)
+            title
+            url (format validation)
+            thumbnailUrl (format validation)
+
+- Lists:
+
+    + Pagination required (default paging 25)
+
+    + Ordering by:
+
+            title (asc | desc)
+
+    + Filtering by:
+
+            albumId (equal)
+            title (equal | like)
+
+    + Total counts
 
 
 
 # Todos
 
-Fields:
+- Fields:
 ```
     userId: integer
     id: integer
@@ -167,23 +211,31 @@ Fields:
     completed: boolean
 ```
 
-Identifier:
-    id (assigned/non editable)
+- Identifier:
 
-Mandatory:
-    userId (Related to users.id)
-    title
-    completed
+            id (assigned/non editable)
 
-Lists:
-- Pagination required (default paging 5)
-- Ordering by:
-    title (asc | desc)
-- Filtering by:
-    userId (equal)
-    title (equal | like)
-    completed (equal)
-- Total counts
+- Mandatory:
+
+            userId (Related to users.id)
+            title
+            completed
+
+- Lists:
+
+    + Pagination required (default paging 5)
+
+    + Ordering by:
+
+            title (asc | desc)
+
+    + Filtering by:
+
+            userId (equal)
+            title (equal | like)
+            completed (equal)
+
+    + Total counts
 
 
 
