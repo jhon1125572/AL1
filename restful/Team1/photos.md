@@ -2,13 +2,13 @@
 
 
 ## Data params' description
-
+```
   | Field name   |      Type      |  Description |
   |--------------|:--------------:|-------------:|
   |albumId       |[integer]       |              |
   |title         |[alphanumeric]  |              |
   |file          |[file]          |              |
-  
+```  
 
 **List Photos**
 ----
@@ -16,7 +16,7 @@
 
 * **URL**
 
-  /photos/
+  /photos
 
 * **Method:**
 
@@ -32,7 +32,7 @@
 
 * **Success Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 201 <br />
     **Content:** 
   ```javascript
       [
@@ -102,7 +102,7 @@
 
 * **Success Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 201 <br />
     **Content:** 
   ```javascript
       {
@@ -137,7 +137,7 @@
 
 * **URL**
 
-  /photos/
+  /photos
 
 * **Method:**
 
@@ -149,19 +149,19 @@
 
 * **Data Params**
 
-    albumId
-    title 
-    file
+  `albumId`
+  `title` 
+  `file`
     
   *Example:*
-    
-    albumId: 1,
-    title: "officia porro iure quia iusto qui ipsa ut modi", 
-    file: "/home/user/image.jpg"
-
+  ```  
+  albumId: 1,
+  title: "officia porro iure quia iusto qui ipsa ut modi", 
+  file: "/home/user/image.jpg"
+  ```
 * **Success Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 201 <br />
     **Content:** 
     ```javascript
       {
@@ -202,7 +202,7 @@
 
 * **URL**
 
-  /photos/
+  /photos
 
 * **Method:**
 
@@ -214,19 +214,19 @@
 
 * **Data Params**
 
-    albumId
-    title 
-    file
-    
+  `albumId`
+  `title` 
+  `file`
+  
   *Example:*
-    
+  ```  
     albumId: 1,
     title: "officia porro iure quia iusto qui ipsa ut modi", 
     file: "/home/user/image.jpg"
-
+  ```
 * **Success Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 201 <br />
     **Content:**
   ```javascript
       {
@@ -247,7 +247,7 @@
 
   ```javascript
     $.ajax({
-      url: "/photos/",
+      url: "/photos",
       dataType: "json",
       data: {
         albumId: 1,
@@ -267,14 +267,14 @@
 
 * **URL**
 
-  /photos/
+  /photos
 
 * **Method:**
 
   `DELETE`
   
 *  **URL Params**
-  
+
   id=[integer]
 
 * **Data Params**
@@ -283,12 +283,15 @@
   
 * **Success Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `{
-    "albumId": 1,
-    "id": 1,
-    "title": "accusamus beatae ad facilis cum similique qui sunt",
-  }`
+  * **Code:** 201 <br />
+    **Content:** 
+    ```javascript
+      {
+        "albumId": 1,
+        "id": 1,
+        "title": "accusamus beatae ad facilis cum similique qui sunt",
+      }
+    ```
  
 * **Error Response:**
 
