@@ -37,7 +37,8 @@
   |geo           |[geo]           |              |false     |
   
   
-###geo(subfield)    
+###geo(subfield)
+
   | Field name   |      Type      |  Description | Required |
   |:------------:|:--------------:|:------------:|:--------:|
   |lat           |[double signed] |              | false    |
@@ -45,6 +46,7 @@
   
   
 ###company(subfield)
+
   | Field name   |      Type      |  Description | Required |
   |:------------:|:--------------:|:------------:|:--------:|
   |name          |[string]        |255           | false    |
