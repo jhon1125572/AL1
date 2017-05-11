@@ -1,22 +1,22 @@
-# API photo's especifications
+# API albums' especifications
 
 
 ## Data params' description
 
   | Field name   |      Type      |  Description |
   |--------------|:--------------:|-------------:|
-  |albumId       |[integer]       |              |
+  |userId        |[integer]       |              |
+  |id            |[integer]       |              |
   |title         |[alphanumeric]  |              |
-  |file          |[file]          |              |
  
 
-**List Photos**
+**List Albums**
 ----
-  Returns json data about all the photos.
+  Returns json data about all the albums.
 
 * **URL**
 
-  `_/photos_`
+  /albums
 
 * **Method:**
 
@@ -24,15 +24,11 @@
   
 * **URL Params**
 
-  _None_ 
+  None 
   
 * **Data Params**
 
-  _None_
-  
-* **Paging Params**
-
-  
+  None
 
 * **Success Response:**
 
@@ -82,13 +78,13 @@
     });
   ```
   
-**Show Photos**
+**Show Album**
 ----
-  Returns json data about a single photo.
+  Returns json data about a single album.
 
 * **URL**
 
-  /photos/:id
+  /album/:id
 
 * **Method:**
 
@@ -97,7 +93,7 @@
 *  **URL Params**
 
    **Required:**
- 
+   `userId=[integer]`
    `id=[integer]`
 
 * **Data Params**
