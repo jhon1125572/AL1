@@ -2,13 +2,13 @@
 
 
 ## Data params' description
-```
+
   | Field name   |      Type      |  Description |
   |--------------|:--------------:|-------------:|
   |albumId       |[integer]       |              |
   |title         |[alphanumeric]  |              |
   |file          |[file]          |              |
-```  
+ 
 
 **List Photos**
 ----
